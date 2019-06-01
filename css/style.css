@@ -1,0 +1,62 @@
+/* .background {
+  background-color: black;
+}
+
+.logo {
+  margin-top: 180px;
+  margin-left: 100px;
+}
+
+h1 {
+  font-family: "OpenSans";
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  padding-bottom: 5px;
+  display: block;
+}
+
+h2 {
+  color: gray;
+  font-size: 1rem;
+  padding-top: 200px;
+  text-align: center;
+}
+
+.header {
+  display: block;
+  flex-direction: column;
+}
+
+.myselect {
+  align-items: center;
+  font-size: 1.1rem;
+  display: block;
+  margin-left: 150px;
+}
+
+.myselect2 {
+  /* display: inline-block;
+  text-align: center;
+} */ 
+
+/* MEDIA QUERY */
+
+/* @media screen and (min-width: 600px){
+    
+    .header{
+        flex-direction: row;
+    }
+
+    h1{
+        font-family: 'OpenSans';
+        color: red;
+        font-size: 1rem;
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        padding-bottom: 5px;
+        display: block;
+        }
