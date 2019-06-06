@@ -1,6 +1,14 @@
 $("select").on("change", function() {
   const section = $(this).val();
 
+  // (function() {
+  //   $(".myselect").click(function() {
+  //     $(this)
+  //       .show("<img src='images/ajax-loader.gif' alt='Loading...' />")
+  //       .hide(this);
+  //   });
+  // });
+
   $.ajax({
     method: "GET",
     url:
@@ -22,7 +30,7 @@ $("select").on("change", function() {
               <div class=image style="background-image: url('${
                 data.results[key].multimedia[4].url
               }')">
-                <div>
+                <div class="image2">
                   <p class="para">'${data.results[key].abstract}'</p>
                   </div>
                         </div>
@@ -38,6 +46,23 @@ $("select").on("change", function() {
     });
   });
 });
+
+var $loading = $(".load").hide();
+$(document)
+  .ajaxStart(function() {
+    $loading.show();
+  })
+  .ajaxStop(function() {
+    $loading.hide();
+  });
+
+// $(".loader").click(function() {
+//   $(".load").show();
+
+//   alert("You should see the image now");
+
+//   $(".load").hide();
+// });
 
 // // target.event
 //  $(".home").append(

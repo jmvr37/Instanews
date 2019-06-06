@@ -3,8 +3,10 @@
 }
 
 .logo {
-  margin-top: 30px;
-  margin-left: 100px;
+  text-align: center;
+  display: block;
+  margin-top: 130px;
+  margin-left: 80px;
 }
 
 h1 {
@@ -26,15 +28,17 @@ h2 {
 }
 
 .header {
-  display: block;
-  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 2rem;
 }
 
 .myselect {
   align-items: center;
   font-size: 1.1rem;
   display: block;
-  margin-left: 150px;
+  margin-left: 130px;
 
   .myselect2 {
     display: inline-block;
@@ -76,11 +80,31 @@ style {
   height: 300px;
 }
 
+.image2 {
+  justify-content: center;
+  align-self: flex-end;
+  position: relative;
+  top: 20px;
+}
+
 .text {
   background: rgba(0, 0, 0, 0.6);
   bottom: 0;
   display: flex;
-  position: absolute;
+  // position: absolute;
+}
+
+.load {
+  height: 50%;
+  position: fixed;
+  width: 50%;
+  top: 0px;
+  left: 0px;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // width: 38px;
+  background: url("../../images/ajax-loader.gif") 50% 50% no-repeat;
+  z-index: 9999;
 }
 
 .home {
