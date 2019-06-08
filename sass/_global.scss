@@ -2,13 +2,6 @@
   background-color: $background-color;
 }
 
-.logo {
-  text-align: center;
-  display: block;
-  margin-top: 130px;
-  margin-left: 80px;
-}
-
 h1 {
   font-family: "OpenSans";
   color: $font-color;
@@ -20,25 +13,44 @@ h1 {
   display: block;
 }
 
-h2 {
-  color: gray;
-  font-size: 1rem;
-  padding-top: 200px;
-  text-align: center;
-}
+// h2 {
+//   color: gray;
+//   font-size: 1rem;
+//   padding-top: 200px;
+//   text-align: center;
+// }
 
 .header {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
+  height: 100%;
   padding: 2rem;
+
+  @media (min-width: 600px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.logo {
+  width: 300px;
+  text-align: center;
+  display: block;
+  margin-bottom: 1rem;
+  // margin-top: 130px;
+  // margin-left: 80px;
 }
 
 .myselect {
   align-items: center;
   font-size: 1.1rem;
   display: block;
-  margin-left: 130px;
 
   .myselect2 {
     display: inline-block;
@@ -95,16 +107,17 @@ style {
 }
 
 .load {
-  height: 50%;
+  height: 100px;
   position: fixed;
-  width: 50%;
-  top: 0px;
-  left: 0px;
+  width: 100px;
+  bottom: 50%;
+  left: calc(50% - 50px);
   // left: 50%;
   // transform: translate(-50%, -50%);
   // width: 38px;
-  background: url("../../images/ajax-loader.gif") 50% 50% no-repeat;
+  background: url("../../images/ajax-loader.gif");
   z-index: 9999;
+  background-size: cover;
 }
 
 .home {
@@ -120,6 +133,15 @@ style {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr 1fr 1fr 1fr;
   }
+}
+
+.footer {
+  color: gray;
+  font-size: 1rem;
+  // padding-top: 200px;
+  text-align: center;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
 }
 
 // @media only screen and (min-width: 600px) {
