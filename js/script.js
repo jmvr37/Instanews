@@ -1,14 +1,18 @@
 $("select").on("change", function() {
   const section = $(this).val();
 
-  // (function() {
-  //   $(".myselect").click(function() {
-  //     $(this)
-  //       .show("<img src='images/ajax-loader.gif' alt='Loading...' />")
-  //       .hide(this);
-  //   });
-  // });
+  //Selector Event Listener
+  $("select").on("change", function() {
+    const sectionName = $(this).val();
+    if (sectionName !== "") {
+      $(".header").addClass("after-header");
+      $(".logo").addClass("after-logo");
+      $(".myselect").addClass("after-select");
+      loadArticles(sectionName);
+    }
+  });
 
+  // Ajax Data
   $.ajax({
     method: "GET",
     url:
@@ -46,7 +50,7 @@ $("select").on("change", function() {
     });
   });
 });
-
+// Loading Image
 var $loading = $(".load").hide();
 $(document)
   .ajaxStart(function() {

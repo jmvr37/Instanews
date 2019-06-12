@@ -2,61 +2,146 @@
   background-color: $background-color;
 }
 
+.para2 {
+  align-self: center;
+}
+
 h1 {
-  font-family: "OpenSans";
+  font-family: "OpenSansLight";
   color: $font-color;
   font-size: 1rem;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  padding-bottom: 5px;
-  display: block;
+  padding-bottom: 0px;
+  // display: flex;
 }
-
-// h2 {
-//   color: gray;
-//   font-size: 1rem;
-//   padding-top: 200px;
-//   text-align: center;
-// }
 
 .header {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  // flex-direction: column;
+  // align-content: center;
   justify-content: center;
-  height: 100%;
-  padding: 2rem;
+  height: 500px;
+  padding: 3rem;
+  transition: all 1s ease-in-out 0s;
 
   @media (min-width: 600px) {
-    display: flex;
+    height: 500px;
     flex-direction: row;
+    transition: all 1s ease-in-out 0s;
   }
   @media (min-width: 1000px) {
+    height: 500px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-content: initial;
+    transition: all 1s ease-in-out 0s;
+  }
+
+  &.after-header {
+    // @media (max-width: 600px) {
+    //   height: 150px;
+    // }
+
+    @media (min-width: 600px) {
+      padding: 5px;
+      height: 100px;
+      flex-direction: row;
+      transition: all 1s ease-in-out 0s;
+    }
+    @media (min-width: 1000px) {
+      padding: 5px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-content: initial;
+      transition: all 1s ease-in-out 0s;
+    }
   }
 }
 
 .logo {
-  width: 300px;
+  width: 500px;
   text-align: center;
+  align-self: center;
   display: block;
   margin-bottom: 1rem;
   // margin-top: 130px;
   // margin-left: 80px;
+
+  @media (min-width: 600px) {
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+  }
+  @media (min-width: 1000px) {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  &.after-logo {
+    @media (min-width: 600px) {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+    @media (min-width: 1000px) {
+      height: 70px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
 
 .myselect {
   align-items: center;
   font-size: 1.1rem;
-  display: block;
+  // display: block;
+  width: 150px;
+  height: 30px;
 
   .myselect2 {
     display: inline-block;
     text-align: center;
   }
+
+  @media (min-width: 600px) {
+    align-self: center;
+    font-size: 1.1rem;
+    display: flex;
+    width: 130px;
+    height: 30px;
+  }
+  @media (min-width: 1000px) {
+    align-items: flex-end;
+    font-size: 1.1rem;
+    display: block;
+    width: 130px;
+    height: 30px;
+  }
+  &.after-select {
+    @media (min-width: 600px) {
+      height: 25px;
+      flex-direction: row;
+      transition: all 1s ease-in-out 0s;
+    }
+    @media (min-width: 1000px) {
+      height: 25px;
+      display: flex;
+      flex-direction: column;
+      align-content: initial;
+      transition: all 1s ease-in-out 0s;
+    }
+  }
 }
+
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -107,9 +192,9 @@ style {
 }
 
 .load {
-  height: 100px;
+  height: 80px;
   position: fixed;
-  width: 100px;
+  width: 80px;
   bottom: 50%;
   left: calc(50% - 50px);
   // left: 50%;
@@ -124,6 +209,7 @@ style {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr;
+  padding-left: 0;
 
   @media (min-width: 600px) {
     grid-template-columns: 1fr 1fr;
@@ -142,6 +228,7 @@ style {
   text-align: center;
   padding: 0 2rem;
   margin-bottom: 2rem;
+  // margin-top: 200px;
 }
 
 // @media only screen and (min-width: 600px) {
