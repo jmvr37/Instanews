@@ -2,15 +2,13 @@ $("select").on("change", function() {
   const section = $(this).val();
 
   //Selector Event Listener
-  $("select").on("change", function() {
-    const sectionName = $(this).val();
-    if (sectionName !== "") {
-      $(".header").addClass("after-header");
-      $(".logo").addClass("after-logo");
-      $(".myselect").addClass("after-select");
-      loadArticles(sectionName);
-    }
-  });
+  const sectionName = $(this).val();
+  if (sectionName !== "") {
+    $(".header").addClass("after-header");
+    $(".logo").addClass("after-logo");
+    $(".myselect").addClass("after-select");
+    // loadArticles(sectionName);
+  }
 
   // Ajax Data
   $.ajax({
