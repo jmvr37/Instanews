@@ -7,7 +7,6 @@ $("select").on("change", function() {
     $(".header").addClass("after-header");
     $(".logo").addClass("after-logo");
     $(".myselect").addClass("after-select");
-    // loadArticles(sectionName);
   }
 
   // Ajax Data
@@ -57,42 +56,3 @@ $(document)
   .ajaxStop(function() {
     $loading.hide();
   });
-
-// $(".loader").click(function() {
-//   $(".load").show();
-
-//   alert("You should see the image now");
-
-//   $(".load").hide();
-// });
-
-// // target.event
-//  $(".home").append(
-//    `<img src='https://static01.nyt.com/images/2019/05/24/us/politics/00dc-cli-trump1/00dc-cli-trump1-thumbStandard.jpg'${
-// //     data.multimedia[0].icon
-// //   }.png' />`
-// // );
-
-// $(".home").append("<ul>" + data.multimedia[0].description + "</ul>");
-// $(".home").append(`<ul>${data.multimedia[0].main}</ul>`);
-
-// $(".results").append("<p>" + data.weather[0].description + "</p>");
-//       $(".results").append(`<p>${data.weather[0].main}</p>`);
-
-// $(function(){
-//     const $select('select');
-//     $select.on('change', function() {
-//       $.ajax({
-//         method: "GET",
-//         url: "https://api.nytimes.com/svc/topstories/v2/" +section+
-//          ".json?api-key=MCJhGoJthqCkQuDvJvgX3isw1LxKIpgO"
-
-//       }).done(function(data){
-//         $.each(data, function(key, value){
-//           console.log(value);
-//         })
-//       })
-//         console.log($select.val());
-//       });
-
-// })

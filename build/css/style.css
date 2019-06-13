@@ -6,9 +6,10 @@
       align-self: center; }
 
 h1 {
-  font-family: "OpenSansLight";
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 14px;
   text-align: center;
   font-style: normal;
   font-weight: normal;
@@ -48,6 +49,12 @@ h1 {
               flex-direction: column;
       -ms-flex-line-pack: initial;
           align-content: initial;
+      -webkit-transition: all 1s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s; } }
+  @media (max-width: 600px) {
+    .header.after-header {
+      height: 350px;
+      padding-top: 0;
       -webkit-transition: all 1s ease-in-out 0s;
       transition: all 1s ease-in-out 0s; } }
   @media (min-width: 600px) {
@@ -95,7 +102,9 @@ h1 {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; } }
+              flex-direction: row;
+      -webkit-transition: all 1s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s; } }
   @media (min-width: 1000px) {
     .logo {
       height: 200px;
@@ -106,7 +115,12 @@ h1 {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; } }
+              flex-direction: row;
+      -webkit-transition: all 1s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s; } }
+  @media (max-width: 600px) {
+    .logo.after-logo {
+      height: 150px; } }
   @media (min-width: 600px) {
     .logo.after-logo {
       height: 70px;
@@ -117,7 +131,9 @@ h1 {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; } }
+              flex-direction: row;
+      -webkit-transition: all 1s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s; } }
   @media (min-width: 1000px) {
     .logo.after-logo {
       height: 70px;
@@ -128,7 +144,9 @@ h1 {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
-              flex-direction: row; } }
+              flex-direction: row;
+      -webkit-transition: all 1s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s; } }
 
 .myselect {
   -webkit-box-align: center;
@@ -149,7 +167,9 @@ h1 {
       display: -ms-flexbox;
       display: flex;
       width: 130px;
-      height: 30px; } }
+      height: 30px;
+      -webkit-transition: all 1s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s; } }
   @media (min-width: 1000px) {
     .myselect {
       -webkit-box-align: end;
@@ -158,6 +178,11 @@ h1 {
       font-size: 1.1rem;
       display: block;
       width: 130px;
+      height: 30px;
+      -webkit-transition: all 1s ease-in-out 0s;
+      transition: all 1s ease-in-out 0s; } }
+  @media (max-width: 600px) {
+    .myselect.after-select {
       height: 30px; } }
   @media (min-width: 600px) {
     .myselect.after-select {

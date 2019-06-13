@@ -7,9 +7,10 @@
 }
 
 h1 {
-  font-family: "OpenSansLight";
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
   color: $font-color;
-  font-size: 1rem;
+  font-size: 14px;
   text-align: center;
   font-style: normal;
   font-weight: normal;
@@ -41,9 +42,12 @@ h1 {
   }
 
   &.after-header {
-    // @media (max-width: 600px) {
-    //   height: 150px;
-    // }
+    @media (max-width: 600px) {
+      height: 350px;
+      // padding: 1rem;
+      padding-top: 0;
+      transition: all 1s ease-in-out 0s;
+    }
 
     @media (min-width: 600px) {
       padding: 5px;
@@ -77,25 +81,33 @@ h1 {
     display: flex;
     align-self: center;
     flex-direction: row;
+    transition: all 1s ease-in-out 0s;
   }
   @media (min-width: 1000px) {
     height: 200px;
     width: 100%;
     display: flex;
     flex-direction: row;
+    transition: all 1s ease-in-out 0s;
   }
   &.after-logo {
+    @media (max-width: 600px) {
+      height: 150px;
+    }
+
     @media (min-width: 600px) {
       height: 70px;
       width: 100%;
       display: flex;
       flex-direction: row;
+      transition: all 1s ease-in-out 0s;
     }
     @media (min-width: 1000px) {
       height: 70px;
       width: 100%;
       display: flex;
       flex-direction: row;
+      transition: all 1s ease-in-out 0s;
     }
   }
 }
@@ -118,6 +130,7 @@ h1 {
     display: flex;
     width: 130px;
     height: 30px;
+    transition: all 1s ease-in-out 0s;
   }
   @media (min-width: 1000px) {
     align-items: flex-end;
@@ -125,8 +138,13 @@ h1 {
     display: block;
     width: 130px;
     height: 30px;
+    transition: all 1s ease-in-out 0s;
   }
   &.after-select {
+    @media (max-width: 600px) {
+      height: 30px;
+    }
+
     @media (min-width: 600px) {
       height: 25px;
       flex-direction: row;
