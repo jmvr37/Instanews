@@ -3,7 +3,8 @@
 
 .para2 {
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  margin-bottom: 30px; }
 
 h1 {
   font-family: "Open Sans", sans-serif;
@@ -28,7 +29,12 @@ h1 {
   padding: 3rem;
   -webkit-transition: all 1s ease-in-out 0s;
   transition: all 1s ease-in-out 0s; }
-  @media (min-width: 600px) {
+  .header.after-header {
+    height: 350px;
+    padding-top: 0;
+    -webkit-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  @media only screen and (min-width: 600px) {
     .header {
       height: 500px;
       -webkit-box-orient: horizontal;
@@ -36,8 +42,17 @@ h1 {
           -ms-flex-direction: row;
               flex-direction: row;
       -webkit-transition: all 1s ease-in-out 0s;
-      transition: all 1s ease-in-out 0s; } }
-  @media (min-width: 1000px) {
+      transition: all 1s ease-in-out 0s; }
+      .header.after-header {
+        padding: 5px;
+        height: 100px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-transition: all 1s ease-in-out 0s;
+        transition: all 1s ease-in-out 0s; } }
+  @media only screen and (min-width: 1000px) {
     .header {
       height: 500px;
       display: -webkit-box;
@@ -50,38 +65,22 @@ h1 {
       -ms-flex-line-pack: initial;
           align-content: initial;
       -webkit-transition: all 1s ease-in-out 0s;
-      transition: all 1s ease-in-out 0s; } }
-  @media (max-width: 600px) {
-    .header.after-header {
-      height: 350px;
-      padding-top: 0;
-      -webkit-transition: all 1s ease-in-out 0s;
-      transition: all 1s ease-in-out 0s; } }
-  @media (min-width: 600px) {
-    .header.after-header {
-      padding: 5px;
-      height: 100px;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-transition: all 1s ease-in-out 0s;
-      transition: all 1s ease-in-out 0s; } }
-  @media (min-width: 1000px) {
-    .header.after-header {
-      padding: 5px;
-      height: 100px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -ms-flex-line-pack: initial;
-          align-content: initial;
-      -webkit-transition: all 1s ease-in-out 0s;
-      transition: all 1s ease-in-out 0s; } }
+      transition: all 1s ease-in-out 0s; }
+      .header.after-header {
+        padding: 5px;
+        height: 100px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-line-pack: initial;
+            align-content: initial;
+        padding-left: 0px;
+        -webkit-transition: all 1s ease-in-out 0s;
+        transition: all 1s ease-in-out 0s; } }
 
 .logo {
   width: 500px;
@@ -90,7 +89,9 @@ h1 {
       align-self: center;
   display: block;
   margin-bottom: 1rem; }
-  @media (min-width: 600px) {
+  .logo.after-logo {
+    height: 150px; }
+  @media only screen and (min-width: 600px) {
     .logo {
       height: 200px;
       width: auto;
@@ -104,8 +105,20 @@ h1 {
           -ms-flex-direction: row;
               flex-direction: row;
       -webkit-transition: all 1s ease-in-out 0s;
-      transition: all 1s ease-in-out 0s; } }
-  @media (min-width: 1000px) {
+      transition: all 1s ease-in-out 0s; }
+      .logo.after-logo {
+        height: 70px;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-transition: all 1s ease-in-out 0s;
+        transition: all 1s ease-in-out 0s; } }
+  @media only screen and (min-width: 1000px) {
     .logo {
       height: 200px;
       width: 100%;
@@ -117,36 +130,19 @@ h1 {
           -ms-flex-direction: row;
               flex-direction: row;
       -webkit-transition: all 1s ease-in-out 0s;
-      transition: all 1s ease-in-out 0s; } }
-  @media (max-width: 600px) {
-    .logo.after-logo {
-      height: 150px; } }
-  @media (min-width: 600px) {
-    .logo.after-logo {
-      height: 70px;
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-transition: all 1s ease-in-out 0s;
-      transition: all 1s ease-in-out 0s; } }
-  @media (min-width: 1000px) {
-    .logo.after-logo {
-      height: 70px;
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-transition: all 1s ease-in-out 0s;
-      transition: all 1s ease-in-out 0s; } }
+      transition: all 1s ease-in-out 0s; }
+      .logo.after-logo {
+        height: 70px;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-transition: all 1s ease-in-out 0s;
+        transition: all 1s ease-in-out 0s; } }
 
 .myselect {
   -webkit-box-align: center;
@@ -158,7 +154,7 @@ h1 {
   .myselect .myselect2 {
     display: inline-block;
     text-align: center; }
-  @media (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     .myselect {
       -ms-flex-item-align: center;
           align-self: center;
@@ -170,7 +166,7 @@ h1 {
       height: 30px;
       -webkit-transition: all 1s ease-in-out 0s;
       transition: all 1s ease-in-out 0s; } }
-  @media (min-width: 1000px) {
+  @media only screen and (min-width: 1000px) {
     .myselect {
       -webkit-box-align: end;
           -ms-flex-align: end;
@@ -184,7 +180,7 @@ h1 {
   @media (max-width: 600px) {
     .myselect.after-select {
       height: 30px; } }
-  @media (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     .myselect.after-select {
       height: 25px;
       -webkit-box-orient: horizontal;
@@ -193,7 +189,7 @@ h1 {
               flex-direction: row;
       -webkit-transition: all 1s ease-in-out 0s;
       transition: all 1s ease-in-out 0s; } }
-  @media (min-width: 1000px) {
+  @media only screen and (min-width: 1000px) {
     .myselect.after-select {
       height: 25px;
       display: -webkit-box;
@@ -228,8 +224,11 @@ ul {
     color: white;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
-    margin-top: 210px;
-    font-size: 18px; }
+    margin-top: 300px;
+    font-size: 18px;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s; }
 
 style {
   width: 100%;
@@ -248,6 +247,11 @@ style {
   display: flex;
   width: 100%;
   height: 100%; }
+
+.image:hover .para {
+  opacity: 100;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s; }
 
 .image2 {
   -webkit-box-pack: center;
@@ -280,12 +284,12 @@ style {
   display: grid;
   grid-template-columns: 1fr;
   padding-left: 0; }
-  @media (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     .home {
       max-width: 100%;
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: 1fr 1fr; } }
-  @media (min-width: 1000px) {
+  @media only screen and (min-width: 1000px) {
     .home {
       max-width: 100%;
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -297,3 +301,6 @@ style {
   text-align: center;
   padding: 0 2rem;
   margin-bottom: 2rem; }
+  @media only screen and (min-width: 1000px) {
+    .footer {
+      text-align: left; } }
