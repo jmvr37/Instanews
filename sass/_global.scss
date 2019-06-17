@@ -4,7 +4,7 @@
 
 .para2 {
   align-self: center;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  padding-bottom: 0px;
+  padding-bottom: 20px;
 }
 
 .header {
@@ -36,7 +36,7 @@ h1 {
     transition: all 1s ease-in-out 0s;
     &.after-header {
       padding: 5px;
-      height: 100px;
+      height: 140px;
       flex-direction: row;
       transition: all 1s ease-in-out 0s;
     }
@@ -49,7 +49,7 @@ h1 {
     transition: all 1s ease-in-out 0s;
     &.after-header {
       padding: 5px;
-      height: 100px;
+      height: 140px;
       display: flex;
       flex-direction: column;
       align-content: initial;
@@ -64,7 +64,7 @@ h1 {
   text-align: center;
   align-self: center;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 7rem;
   &.after-logo {
     height: 150px;
   }
@@ -81,6 +81,7 @@ h1 {
       width: 100%;
       display: flex;
       flex-direction: row;
+      margin-bottom: 10px;
       transition: all 1s ease-in-out 0s;
     }
   }
@@ -89,12 +90,14 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: row;
+    padding-right: 70px;
     transition: all 1s ease-in-out 0s;
     &.after-logo {
       height: 70px;
       width: 100%;
       display: flex;
       flex-direction: row;
+      margin-bottom: 10px;
       transition: all 1s ease-in-out 0s;
     }
   }
@@ -168,7 +171,7 @@ ul {
     margin-top: 300px;
     font-size: 18px;
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.5s;
   }
 }
 
@@ -189,8 +192,6 @@ style {
   .para {
     opacity: 100;
     transition: opacity 1s;
-    // background-color: rgba(0, 0, 0, 0.6);
-    // transition: height 1s;
   }
 }
 
@@ -241,7 +242,8 @@ style {
   font-size: 1rem;
   text-align: center;
   padding: 0 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
+  padding-top: 40px;
 
   @include desktop {
     text-align: left;
