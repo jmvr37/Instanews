@@ -1,8 +1,8 @@
-$(function() {
-  $("select").on("change", function() {
+$(function () {
+  $("select").on("change", function () {
     const section = $(this).val();
 
-    //Selector Event Listener
+
     const sectionName = $(this).val();
     if (sectionName !== "") {
       $(".header").addClass("after-header");
@@ -10,17 +10,17 @@ $(function() {
       $(".myselect").addClass("after-select");
     }
 
-    // Ajax Data
+
     $.ajax({
       method: "GET",
       url:
         "https://api.nytimes.com/svc/topstories/v2/" +
         section +
         ".json?api-key=MCJhGoJthqCkQuDvJvgX3isw1LxKIpgO"
-    }).done(function(data) {
+    }).done(function (data) {
       let cont = 0;
       $(".home").html("");
-      $.each(data.results, function(key, value) {
+      $.each(data.results, function (key, value) {
         if (data.results[key].multimedia.length >= 5 && cont < 12) {
           try {
             cont = cont + 1;
@@ -28,7 +28,7 @@ $(function() {
               `<li class="style">
             <a href='${data.results[key].url}'>
               <div class="image" style="background-image: url('${
-                data.results[key].multimedia[4].url
+              data.results[key].multimedia[4].url
               }')">
                 <div class="image2">
                   <p class="para">${data.results[key].abstract}</p>
@@ -44,14 +44,14 @@ $(function() {
       });
     });
   });
-  // Loading Image
+
   var $loading = $(".load").hide();
   $(document)
-    .ajaxStart(function() {
+    .ajaxStart(function () {
       $loading.show();
       $(".home").hide();
     })
-    .ajaxStop(function() {
+    .ajaxStop(function () {
       $loading.hide();
       $(".home").show();
     });
