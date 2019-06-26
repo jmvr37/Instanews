@@ -2,7 +2,7 @@
   background-color: $background-color;
 }
 
-.para2 {
+.container-one {
   align-self: center;
   margin-bottom: 0px;
 }
@@ -164,7 +164,7 @@ ul {
     width: 100%;
     height: 100%;
   }
-  .para {
+  .paragraph {
     color: white;
     text-align: center;
     background: rgba(0, 0, 0, 0.7);
@@ -189,7 +189,7 @@ style {
   height: 100%;
 }
 .image:hover {
-  .para {
+  .paragraph {
     opacity: 100;
     transition: opacity 1s;
   }
