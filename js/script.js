@@ -31,7 +31,7 @@ $(function () {
               data.results[key].multimedia[4].url
               }')">
                 <div class="image2">
-                  <p class="para">${data.results[key].abstract}</p>
+                  <p class="paragraph">${data.results[key].abstract}</p>
                   </div>
                         </div>
                           </a>
